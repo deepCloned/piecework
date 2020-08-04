@@ -1,0 +1,25 @@
+.welcome{
+  position: relative;
+  background: url('https://piecework-server-product.oss-cn-hangzhou.aliyuncs.com/681C5FB7A066BD3EB5B195E7E1CB924E.png') no-repeat;
+  background-size: 100% 100%;
+  .login-tip{
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 38px;
+    background: #436cd5;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

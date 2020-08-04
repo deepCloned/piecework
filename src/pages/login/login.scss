@@ -1,0 +1,70 @@
+.login{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #313131;
+  color: #fff;
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo-image{
+      width: 65px;
+      height: 65px;
+    }
+    .app-name{
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  .login-area{
+    width: 280px;
+    margin-top: 12px;
+    .input-common{
+      display: flex;
+      background: #313131;
+      padding: 12px 0;
+      border-bottom: 1px solid #bcbcbc;
+      img{
+        width: 12px;
+        height: 15px;
+      }
+      input{
+        flex: 1;
+        background: none;
+        outline: none;
+        border: 0;
+        margin-left: 10px;
+        color: #fff;
+      }
+      .get-code{
+        font-size: 12px;
+        color: #f9a938;
+      }
+      .is-lock{
+        color: #fff;
+      }
+    }
+    .confirm{
+      margin-top: 20px;
+      width: 280px;
+      height: 40px;
+      outline: none;
+      border: 0;
+      border-radius: 40px;
+      background: #f9a938;
+      color: #fff;
+      letter-spacing: 2px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .slogan{
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
