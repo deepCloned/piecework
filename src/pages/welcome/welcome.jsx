@@ -11,6 +11,7 @@ class Welcome extends Component {
   componentDidMount() {
     // 获取屏幕高度和宽度
     this.setWindowSize();
+    localStorage.setItem('token', '05272D77754755C9563D9F3FE1780FD7')
   }
 
   setWindowSize() {

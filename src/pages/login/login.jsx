@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import {User} from '../../model/user';
 import "./login.scss";
 
 class Login extends Component {
@@ -59,8 +60,8 @@ class Login extends Component {
   }
 
   /* 提交登录 */
-  handleConfirmLogin() {
-    console.log("login");
+  async handleConfirmLogin() {
+    const loginRes = await User.getUserInfo()
   }
 
   render() {
