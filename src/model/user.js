@@ -6,7 +6,7 @@ class User {
    */
   static async getUserInfo(data = {}) {
     return await Http.request({
-      url: `manager/queryManagerInf`,
+      url: `manager/queryManagerInfo`,
       data,
     });
   }

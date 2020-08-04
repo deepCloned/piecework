@@ -1,5 +1,5 @@
 const config = {
-  BASE_URL: "https://rob.megameta.cn/shop-front/",
+  BASE_URL: "/api/",
 };
 
 export { config };

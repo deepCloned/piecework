@@ -55,6 +55,15 @@ class Http {
       //   },
       //   method,
       // })
+      console.log('postData is', postData)
+      const res = await axios({
+        url: `${config.BASE_URL}${url}`,
+        header: {
+          "content-type": "application/x-www-form-urlencoded",
+        },
+        method,
+        data: postData,
+      })
       console.log(res)
     } catch (err) {
       console.log(err)

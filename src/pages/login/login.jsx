@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import {User} from '../../model/user';
+import {Auth} from '../../model/auth';
 import "./login.scss";
 
 class Login extends Component {
@@ -45,18 +46,19 @@ class Login extends Component {
   }
 
   /* 获取验证码 */
-  handleGetCode() {
-    const { lock } = this.state;
-    if (lock) {
-      console.log("请勿重复获取验证码");
-      return;
-    } else {
-      this.setState({
-        lock: true
-      })
-      console.log("获取验证码");
-      console.log('fetch is', fetch)
-    }
+  async handleGetCode() {
+    const { lock, phone } = this.state;
+    console.log(phone)
+    // if (lock) {
+    //   console.log("请勿重复获取验证码");
+    //   return;
+    // } else {
+    //   this.setState({
+    //     lock: true
+    //   })
+    // }
+    const res = Auth.getCodeByPhone({phone})
+    console.log('res is', res)
   }
 
   /* 提交登录 */
